@@ -13,4 +13,90 @@ The output of the application is an MP4 video containing the generated Perlin no
 
 This project is aimed at content creators, musicians, and anyone interested in generating visuals that react to audio.
 
+## Requirements
 
+- Python 3.8+
+- FFmpeg (required for video encoding)
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/ahnewtown32/sound-visualisation-generator.git
+cd sound-visualisation-generator
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## Usage
+
+> **Note:** Full usage instructions will be added once the CLI/UI entrypoint is finalized.
+
+Basic usage:
+```bash
+python main.py --input your_audio.wav --output visualization.mp4
+```
+
+## Tech Stack
+
+- **Python 3.8+** - Core programming language
+- **NumPy** - Numerical computations
+- **librosa** - Audio analysis and feature extraction
+- **OpenCV** - Video generation and export
+- **noise** - Perlin noise generation
+- **FFmpeg** - Video encoding
+
+## Project Structure
+
+```
+sound-visualisation-generator/
+├── src/
+│   ├── audio/          # Audio analysis modules
+│   ├── visual/         # Perlin noise generation
+│   ├── export/         # Video rendering and export
+│   └── ui/             # User interface components
+├── tests/              # Unit and integration tests
+├── examples/           # Sample audio files and outputs
+├── docs/               # Documentation and assets
+├── requirements.txt    # Python dependencies
+├── CONTRIBUTING.md     # Contribution guidelines
+├── LICENSE             # License information
+└── README.md           # This file
+```
+
+## Roadmap
+
+- [x] Basic audio analysis (bass/mids/highs detection)
+- [x] Perlin noise generation
+- [x] Video export to MP4
+- [ ] GUI with live preview
+- [ ] Real-time parameter adjustment
+- [ ] Additional noise algorithms (Simplex, Worley, etc.)
+- [ ] Batch processing support
+- [ ] Preset configurations and templates
+- [ ] Custom colour palette support
+
+## Contributing
+
+Contributions are welcome! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get started.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Inspired by the need for simpler, more accessible audio visualisation tools
+- Built with love for content creators and musicians
+
+## Support
+
+If you encounter any issues or have questions:
+- Check existing [Issues](https://github.com/ahnewtown32/sound-visualisation-generator/issues)
+- Open a new issue using our templates
+- Reach out via [GitHub Discussions](https://github.com/ahnewtown32/sound-visualisation-generator/discussions)
