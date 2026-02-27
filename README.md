@@ -74,12 +74,9 @@ sound-visualisation-generator/
 - [ ] Basic audio analysis (bass/mids/highs detection)
 - [ ] Perlin noise generation
 - [ ] Video export to MP4
-- [ ] GUI with live preview
-- [ ] Real-time parameter adjustment
-- [ ] Additional noise algorithms (Simplex, Worley, etc.)
-- [ ] Batch processing support
-- [ ] Preset configurations and templates
-- [ ] Custom colour palette support
+- [ ] Basic GUI 
+- [ ] Parameter adjustment
+
 
 ## Contributing
 
