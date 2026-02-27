@@ -1,10 +1,9 @@
 ---
-name:📋 Backlog Item
-about: Log a backlog item
-title: ''
-labels: ''
+name: 📋 Task/Backlog Item
+about: Create a task or backlog item for planning
+title: '[TASK] '
+labels: 'task'
 assignees: ''
-
 ---
 
 ## Summary
