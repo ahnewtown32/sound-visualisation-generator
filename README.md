@@ -89,10 +89,6 @@ Contributions are welcome! Please see our [Contributing Guidelines](CONTRIBUTING
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Inspired by the need for simpler, more accessible audio visualisation tools
-- Built with love for content creators and musicians
 
 ## Support
 
