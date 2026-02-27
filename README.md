@@ -71,9 +71,9 @@ sound-visualisation-generator/
 
 ## Roadmap
 
-- [x] Basic audio analysis (bass/mids/highs detection)
-- [x] Perlin noise generation
-- [x] Video export to MP4
+- [ ] Basic audio analysis (bass/mids/highs detection)
+- [ ] Perlin noise generation
+- [ ] Video export to MP4
 - [ ] GUI with live preview
 - [ ] Real-time parameter adjustment
 - [ ] Additional noise algorithms (Simplex, Worley, etc.)
