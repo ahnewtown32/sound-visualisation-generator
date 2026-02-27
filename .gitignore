@@ -1,0 +1,35 @@
+# Virtual environments
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Packaging
+*.egg-info/
+dist/
+build/
+
+# Pytest
+.pytest_cache/
+
+# Ruff
+.ruff_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated media
+*.mp4
+*.wav
+
+# Local output
+out.mp4
