@@ -1,9 +1,9 @@
 ---
-name: Backlog Item
+name:📋 Backlog Item
 about: Log a backlog item
 title: ''
 labels: ''
-assignees: ahnewtown32
+assignees: ''
 
 ---
 
