@@ -1,35 +1,41 @@
 # Virtual environments
+.venv/
 venv/
-.env/
+env/
+.env
 
-# Python cache
+
+# Python cache / compiled
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Packaging
-*.egg-info/
-dist/
+
+# Build / packaging
 build/
+dist/
+*.egg-info/
 
-# Pytest
+
+# Testing / tooling caches
 .pytest_cache/
-
-# Ruff
 .ruff_cache/
-
-# Coverage
 .coverage
 htmlcov/
+
 
 # OS files
 .DS_Store
 Thumbs.db
+Desktop.ini
 
-# Generated media
-*.mp4
-*.wav
 
-# Local output
+# IDE / Editors 
+.vscode/
+.idea/
+
+
+# Generated output
+output/
 out.mp4
