@@ -9,7 +9,7 @@
 - [ ] Build/CI/Dev tooling
 - [ ] Other (describe):
 
-## How to test
+## How to test (Provide steps someone else can follow)
 <!-- Provide steps someone else can follow -->
 1.
 2.
