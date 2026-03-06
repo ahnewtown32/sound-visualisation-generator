@@ -116,8 +116,21 @@ For maintainers and contributors planning work, use the [**backlog item template
 
 ## Code Style Guidelines
 
-- TBC
 
+This project follows PEP 8 for Python code style and uses Ruff to enforce linting and formatting in CI.
+
+Before submitting a pull request, please make sure that:
+
+- `ruff check .` passes
+- `ruff format --check .` passes
+- `pytest -q` passes
+
+In general:
+
+- Use clear, descriptive names
+- Keep functions and classes focused and easy to read
+- Follow the existing project structure and style
+- Add or update tests when changing behaviour
 
 
 ## Testing
@@ -135,7 +148,7 @@ All code contributions should include tests:
 
 ## Pull Request Process
 
-When you're ready to submit your changes, please use our [**pull request template**](.github/PULL_REQUEST_TEMPLATE.md), which will be automatically loaded when you create a PR.
+When you're ready to submit your changes, please use our [**pull request template**](.github/ISSUE_TEMPLATE/pull_request_template.md), which will be automatically loaded when you create a PR.
 
 ### Steps to Create a Pull Request
 
@@ -153,7 +166,12 @@ When you're ready to submit your changes, please use our [**pull request templat
 
 3. **Test thoroughly**:
 
-   - TBC
+  Run the same checks locally that CI runs:
+
+   ```bash
+   ruff check .
+   ruff format --check .
+   pytest -q```      
 
 4. **Commit your changes**:
    ```bash
@@ -206,7 +224,7 @@ Quick links to all our templates:
 - [✨ Feature Request](.github/ISSUE_TEMPLATE/feature_request.md) - Suggest new features
 - [📚 Documentation](.github/ISSUE_TEMPLATE/documentation.md) - Request documentation improvements
 - [📋 Backlog Item](.github/ISSUE_TEMPLATE/backlog-item.md) - Create planning tasks
-- [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md) - Submit code changes
+- [Pull Request Template](.github/ISSUE_TEMPLATE/pull_request_template.md) - Submit code changes
 
 ## Questions?
 
