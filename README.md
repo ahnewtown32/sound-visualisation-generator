@@ -15,7 +15,7 @@ This project is aimed at content creators, musicians, and anyone interested in g
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.11+
 - FFmpeg (required for video encoding)
 
 ## Installation
@@ -26,12 +26,44 @@ git clone https://github.com/ahnewtown32/sound-visualisation-generator.git
 cd sound-visualisation-generator
 
 # Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -r requirements.txt -r requirements-dev.txt
 ```
+
+## Development Setup
+
+The project uses **Python 3.11** for local development, CI, and Docker.  
+Using the same Python version locally helps avoid environment inconsistencies.
+
+We recommend creating a `.venv` virtual environment inside the repository to isolate project dependencies.
+
+### 1. Create a virtual environment
+
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+```
+
+### 2. Install dependencies
+
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt -r requirements-dev.txt
+pip install -e .
+```
+
+### 3. Run quality checks
+
+```bash
+ruff check .
+ruff format --check .
+pytest --cov=svg --cov-report=term-missing -q
+```
+
+These commands run linting, formatting checks, and the test suite locally before CI runs.
 
 ## Usage
 
@@ -44,7 +76,7 @@ python main.py --input your_audio.wav --output visualization.mp4
 
 ## Tech Stack
 
-- **Python 3.8+** - Core programming language
+- **Python 3.11+** - Core programming language
 - **NumPy** - Numerical computations
 - **librosa** - Audio analysis and feature extraction
 - **OpenCV** - Video generation and export
@@ -74,7 +106,7 @@ sound-visualisation-generator/
 - [ ] Basic audio analysis (bass/mids/highs detection)
 - [ ] Perlin noise generation
 - [ ] Video export to MP4
-- [ ] Basic GUI 
+- [ ] Basic GUI
 - [ ] Parameter adjustment
 
 
