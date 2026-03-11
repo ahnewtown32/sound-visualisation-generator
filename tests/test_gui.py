@@ -1,11 +1,18 @@
+import os
+
+import pytest
+
 from svg.ui.app import SoundVisualisationApp
 
+pytestmark = pytest.mark.skipif(
+    os.environ.get("DISPLAY") is None,
+    reason="No display available for Tkinter GUI tests.",
+)
 
-# Basic test for GUI creation and default values.
-# More tests can be added later.
+
 def create_app():
     app = SoundVisualisationApp()
-    app.withdraw()  # hide GUI during tests
+    app.withdraw()
     return app
 
 
@@ -23,8 +30,7 @@ def test_default_audio_file():
 
 def test_slider_defaults():
     app = create_app()
-
     assert round(app.scale_slider.get(), 1) == 1.0
     assert round(app.speed_slider.get(), 1) == 1.0
-
+    assert int(app.detail_slider.get()) == 5
     app.destroy()
