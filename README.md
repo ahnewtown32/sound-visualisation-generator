@@ -20,18 +20,62 @@ This project is aimed at content creators, musicians, and anyone interested in g
 
 ## Installation
 
+### Clone the repository
+
 ```bash
-# Clone the repository
 git clone https://github.com/ahnewtown32/sound-visualisation-generator.git
 cd sound-visualisation-generator
+```
 
+---
+
+### macOS / Linux
+
+```bash
 # Create virtual environment
 python3 -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Activate it
+source .venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt -r requirements-dev.txt
 ```
+
+---
+
+### Windows (PowerShell)
+
+```powershell
+# Run setup script
+./scripts/setup.ps1
+```
+
+> This script will:
+> - Create a virtual environment
+> - Activate it
+> - Install all required dependencies
+
+
+---
+
+## Running the Project
+
+```bash
+python main.py
+```
+
+---
+
+## Notes
+
+- Ensure you are using Python 3.10+ (or the required version for this project)
+- On Windows, you may need to allow script execution:
+
+```powershell
+Set-ExecutionPolicy -Scope -ExecutionPolicy Bypass
+```
+
 ## Releases
 
 Prebuilt application downloads are available from the project's [GitHub Releases](https://github.com/ahnewtown32/sound-visualisation-generator/releases) page.
